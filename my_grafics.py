@@ -40,8 +40,8 @@ def Grafics(my_table, Is_anim, name):
             x2.append(x_aim[i])
             y2.append(y_aim[i])
 
-            plt.plot(x1, y1, color="red", linewidth=1)
-            plt.plot(x2, y2, color="blue", linewidth=1)
+            plt.plot(x1, y1, color="red", linewidth=3)
+            plt.plot(x2, y2, color="blue", linewidth=3)
 
         res = FuncAnimation(
             fig, animate, init_func=init, interval=my_table["initial"]["oneTimeInterval"]*1000/8)
@@ -53,11 +53,11 @@ def Grafics(my_table, Is_anim, name):
         plt.ylim([0, 32000])
         for i in range(0, len(x_aim), 10):
             plt.plot([x_b, x_aim[i]], [y_b, y_aim[i]],
-                     color="black", linewidth=0.15)
+                     color="black", linewidth=0)
 
-        plt.plot(x_c, y_c, color="red", linewidth=1,
+        plt.plot(x_c, y_c, color="red", linewidth=1.5,
                  marker='o', markeredgecolor='black', markersize=2, markerfacecolor='white', markeredgewidth=0.5)
-        plt.plot(x_aim, y_aim, color="blue", linewidth=1,)
+        plt.plot(x_aim, y_aim, color="blue", linewidth=1.5)
     plt.title(name)
     plt.xlabel("X")
     plt.ylabel("Y")
