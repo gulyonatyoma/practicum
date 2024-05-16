@@ -52,7 +52,7 @@ print("2. Catching up")
 
 choose_2 = int(input())
 
-if (choose_2 == 1):
+if (choose_2 == 2):
     if (choose_1 == 1):
         my_table_1 = method.three_point(False)
         print_json(my_table_1)
@@ -80,7 +80,7 @@ if (choose_2 == 1):
     else:
         print("Wrong input!")
 
-elif (choose_2 == 2):
+elif (choose_2 == 1):
     if (choose_1 == 1):
         my_table_1 = method.three_point(False)
         print_json(my_table_1)
