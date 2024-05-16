@@ -9,8 +9,10 @@ from matplotlib.animation import FuncAnimation
 # Четверка в interval лишняя
 
 
-def Grafics(my_table, Is_anim):
+def Grafics(my_table, Is_anim, name):
     # Функция строить как анимированную траекторию, так и статическую
+
+    
 
     x_b, y_b = my_table["initial"]["baseX"], my_table["initial"]["baseY"]
 
@@ -46,7 +48,6 @@ def Grafics(my_table, Is_anim):
         # res.save('animation.gif')
 
     else:
-
         fig = plt.figure(figsize=(6, 8), linewidth=500000.0)
         plt.xlim([0, 100000])
         plt.ylim([0, 32000])
@@ -57,6 +58,8 @@ def Grafics(my_table, Is_anim):
         plt.plot(x_c, y_c, color="red", linewidth=1,
                  marker='o', markeredgecolor='black', markersize=2, markerfacecolor='white', markeredgewidth=0.5)
         plt.plot(x_aim, y_aim, color="blue", linewidth=1,)
-
+    plt.title(name)
+    plt.xlabel("X")
+    plt.ylabel("Y")
     plt.scatter(x_b, y_b, c='red')
     plt.show()
