@@ -1,8 +1,8 @@
 from math import inf
 import json
 
-from my_grafics import Grafics
-from my_methods import Methods
+from grafics import Grafics
+from method import Methods
 
 data = {
     "initial": {
