@@ -1,5 +1,5 @@
 from math import inf
-from my_math import Math_functions
+from math import Math_functions
 
 from methods.three_point import m_three_point
 from methods.straightening import m_straightening
