@@ -54,7 +54,7 @@ choose_2 = int(input())
 
 if (choose_2 == 2):
     if (choose_1 == 1):
-        my_table_1 = method.three_point(False)
+        my_table_1 = method.three_point(True)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Three point, Catching up")
     elif (choose_1 == 2):
@@ -66,11 +66,11 @@ if (choose_2 == 2):
         print_json(my_table_1)
         Grafics(my_table_1, False, "Chase, Cathcing up")
     elif (choose_1 == 4):
-        my_table_1 = method.parallel_approach(False)
+        my_table_1 = method.parallel_approach(True)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Parallel approach, Catching up")
     elif (choose_1 == 5):
-        my_table_1 = method.proportional_convergence(False, inf)
+        my_table_1 = method.proportional_convergence(True, inf)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Proportional convergence, Catching up")
     elif (choose_1 == 6):
@@ -86,11 +86,11 @@ elif (choose_2 == 1):
         print_json(my_table_1)
         Grafics(my_table_1, False, "Three point, Meeting")
     elif (choose_1 == 2):
-        my_table_1 = method.straightening(True, 0.5)
+        my_table_1 = method.straightening(False, 0.5)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Straightening, Meeting")
     elif (choose_1 == 3):
-        my_table_1 = method.chase(True)
+        my_table_1 = method.chase(False)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Chase, Meeting")
     elif (choose_1 == 4):
@@ -102,7 +102,7 @@ elif (choose_2 == 1):
         print_json(my_table_1)
         Grafics(my_table_1, False, "Proportional convergence, Meeting")
     elif (choose_1 == 6):
-        my_table_1 = method.constant_angle(True)
+        my_table_1 = method.constant_angle(False)
         print_json(my_table_1)
         Grafics(my_table_1, False, "Constant angle, Meeting")
     else:
